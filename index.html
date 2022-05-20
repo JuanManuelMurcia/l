@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puto</title>
+
+<style>
+    body{
+        background-color: red;
+    }
+</style>
+
+</head>
+<body>
+    <h3>puto</h3>
+    <input type="button" 
+    onclick="accionParaCuandoDigaQueSi()" id="btnSi"  value="Si"/>
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No"/>
+
+    <script>
+        
+        function accionParaCuandoDigaQueSi(){
+            alert('puto');
+            
+        }
+   
+        function mueveElBoton(){
+            let newHeigth=''
+            let newWidth=''
+            width = window.innerWidth;
+            heigth = window.innerHeight;
+    
+            newWidth = (Math.random() * width);
+            newWidth = (Math.random() * heigth);
+    
+            document.getElementById('btnNo').style.position 
+     = "absolute";
+            document.getElementById('btnNo').style.left = newWidth +"px";
+            document.getElementById('btnNo').style.top = newHeigth +"px";
+        }
+    </script>
+</body>
+</html>
